@@ -1,0 +1,35 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+      //  maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.1'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+      //  maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url "https://jitpack.io" }
+    }
+}
+ext {
+    supportVer = "27.1.0"
+    retrofitVer = "2.2.0"
+    glideVer = "3.7.0"
+    rxjavaVer = "2.0.7"
+    rxandroidVer = "2.0.2"
+    okhttpVer = "3.6.0"
+    leakcanaryVer = "1.5.4"
+    glideVer = "4.3.1"
+    roomVer = "1.0.0"
+}
